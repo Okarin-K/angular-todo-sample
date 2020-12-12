@@ -1,1 +1,10 @@
-<h1>test</h1>
+<h1>My Todo</h1>
+<input [(ngModel)]="newTodo" placeholder="Input here...">
+<button (click)="addTodo()">Add</button>
+<h5>Todo List</h5>
+<ul>
+  <li *ngFor="let todo of todoList; let i = index">
+    {{todo}}
+    <button (click)="deleteTodo(i)">Delete</button>
+  </li>
+</ul>

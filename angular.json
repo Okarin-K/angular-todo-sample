@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "todo-client"
+  "defaultProject": "todo-client",
+  "cli": {
+    "analytics": false
+  }
 }
